@@ -8,7 +8,7 @@ import React from 'react'
         {
             id:1,
             name: "the iron man",
-            imgSrc: "https://cdn.pixabay.com/photo/2016/08/12/14/25/abstract-1588720__340.jpg",
+            imgSrc: "https://cdn.vox-cdn.com/thumbor/okevM8PnR_-ZBdAdmi0gpTr0Smg=/0x0:5472x3648/920x613/filters:focal(2299x1387:3173x2261):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70576220/1233995608.0.jpg",
             webLink: "https://youtu.be/T3IqVaB65TU"
         },
        
@@ -31,7 +31,7 @@ import React from 'react'
         {/* {PicData.map((val)=>{
           return  <img  src={val.imgSrc} alt='image error'/>
         })} */}
-       <div className='one'> <img  src={PicData[0].imgSrc} alt='image error'/> <span className='text'>This Is React Blog App <br></br> {time}</span></div>
+       <div className='one'> <img  src={PicData[0].imgSrc} alt='image error'/> <span className='text'>Solar is the Future of Energy <br></br> {time}</span></div>
        <div className='two'> <img  src={PicData[1].imgSrc} alt='image error'/> <span className='text1'></span></div>
        <div className='three'> <img  src={PicData[2].imgSrc} alt='image error'/> <span className='text2'></span></div>
     </div>

@@ -5,37 +5,28 @@
 
 .navbarList{
 width: 100%;
-background-color: blue;
+background-color: cadetblue;
 color: white;
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: 2fr 1fr;
+grid-template-rows: 1fr 1fr;
+position: fixed;
+margin: -11px;
+z-index: 99;
 }
 
 .heading{
 font-size: 1.5rem;
 text-align: center;
-/* align-items: center; */
 width: 100%;
 
 }
 .rotate{
     transform: rotate(-90deg);
-    /* margin-top: .4%; */
-    /* margin-left: 40%; */
-    /* position: absolute; */
-    /* width: 5vw; */
+    margin-top: 10px;
+  
 }
-/* .rotateNot{
-    margin-left: 20%;
-    position: absolute;
-} */
 
-/* @media (max-width: 600px){
-    .heading{
-        text-align: left;
-    }
-} */
 .list ul{
     display: flex;
     justify-content: center;
@@ -44,6 +35,7 @@ width: 100%;
 
 .list ul li{
     list-style: none;
+    font-size: 1.9rem;
 }
 
 .animatLine{
@@ -88,11 +80,12 @@ width: 100%;
             .heading{
                 font-size: 1.1rem;
                 text-align: left;
+                margin-top: 1%;
                 }
 
                 .rotate{
                     margin-left: 3%;
-                    margin-top: 1%;
+                    margin-top: .5%;
                     position: absolute;
                 }
 
@@ -115,22 +108,11 @@ width: 100%;
             text-align: center;
             
         }
-        /* .list ul {
-            display: block;} */
+        
     }
 
 
-/* @keyframes line {
-    0%{
-        left: 0;
-    }
-   100%{
-        left: 100%;
-    }
-    0%{
-        left: 0;
-    }
-} */
+
 .HomePicDiv{
     width: 100%;
     height: 10vh;
@@ -139,6 +121,8 @@ width: 100%;
     grid-template-rows: 1fr 1fr;
     column-gap: 300px;
     row-gap: 10px;
+    position: absolute;
+    top: 21%;
 }
 
 .HomePicDiv .one {
@@ -168,15 +152,18 @@ width: 100%;
 }
 .HomePicDiv .one .text{
     position: absolute;
-    left: 30%;
-    left: 15%;
-    margin-top: 10%;
-    z-index: 99;
-    color: yellow;
+    top: 175%;
+   
+    left: 7%;
+    
+    z-index: 90;
+    color: greenyellow;
+    font-size: 1.6rem;
 }
 
 .HomePicDiv .two .text1{
     position: absolute;
+    
     right: 20%;
     z-index: 99;
     color: yellow;
@@ -191,12 +178,40 @@ width: 100%;
 @media (max-width: 600px){
     .HomePicDiv {
         column-gap: 130px;
+        position: absolute;
+        top: 3.7%;
+    }
+
+    .HomePicDiv .one .text{
+        top: 202%;
+    }
+    .homepageContainer{
+        display: block;
+        height: 55vh;}
+
+        .adverDiv{font-size: 0.6rem;}
+
+        .homePage3 {
+            display: flex;
+            width: 100%;
+            height: 175vh;
+        }
+}
+@media (min-width: 600px) and (max-width: 1600px) {
+    .HomePicDiv {
+        
+        position: absolute;
+        top: 15%;
+        column-gap: 23%
     }
 }
 .homepageContainer{
     display: block;
     height: 65vh;
-    margin-top: 10px;
+    /* position: absolute; */
+    top: 10%;
+    /* margin-top: 10px; */
+
 }
 .homePge2{
     display: flex;
@@ -217,7 +232,7 @@ width: 100%;
 .homePage3{
     display: flex;
     width: 100%;
-    height: 120vh;
+    height: 140vh;
 }
 .homePage3 .LeftArticle{
     width: 60%;
@@ -243,7 +258,7 @@ width: 100%;
 
 .sportStyle{
     width:100%;
-    height: 400vh;
+    height: 210vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -252,7 +267,7 @@ width: 100%;
     margin: 10px;
 }
 .sportStyle h4{
-    width: 10vw;
+    width: 30vw;
 }
 .sportStyle img{
     width: 30vw;
@@ -263,4 +278,17 @@ width: 100%;
 }
 .sportStyle p{
     width: 30vw;
+}
+@media (max-width: 600px){
+    .homepageContainer{
+        display: block;
+        height: 55vh;}
+
+     
+
+        .homePage3 {
+            display: flex;
+            width: 100%;
+            height: 175vh;
+        }
 }

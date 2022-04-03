@@ -1,21 +1,23 @@
 import React from 'react'
 import HomePic from './HomePic'
-import { PicData, TheLatestArticleRight } from './Data';
+import { PicData } from './Data';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Sports from './Sports';
 import Hollywood from './Hollywood'
 import { Link, NavLink, Outlet } from 'react-router-dom';
+import { useContext } from 'react'
+import {contextData} from '../Context'
 
 const Home = () => {
-  
+const catchData=useContext(contextData)
 const time = new Date().toLocaleString();
-const [theLatestArticle, setTheLatestArticle] = useState([])
+const [theLatestArticleLeft, setTheLatestArticleLeft] = useState([])
 useEffect(()=>{
   const getArticle= async()=>{
     const response = await axios.get("https://newsapi.org/v2/top-headlines?apiKey=8c0e1efd64d44fd6b2e5b05506cf1def&q=entertainment")
     console.log(response)
-    setTheLatestArticle(response.data.articles)
+    setTheLatestArticleLeft(response.data.articles)
     
   }
   getArticle()
@@ -36,7 +38,7 @@ useEffect(()=>{
     <div className='homepageContainer'>
     <HomePic time={time}/>
     </div>
-    <h3 ><NavLink className='animatLine' to='/'>The Latest</NavLink> </h3>
+    <h1 ><NavLink className='animatLine' to='/'>Top post</NavLink> </h1>
     <div className='homePge2'>
       
         {PicData.map((picVal)=>{
@@ -55,7 +57,7 @@ useEffect(()=>{
     <div className='homePage3'>
       <div className='LeftArticle'>
         {
-          theLatestArticle.map((artVal)=>{
+          theLatestArticleLeft.map((artVal)=>{
             return (
               <>
               <div style={{display:"flex", margin:"1%"}}>
@@ -99,8 +101,68 @@ useEffect(()=>{
         </div>
 
     </div>
-    <Sports/>
-    <Hollywood />
+     <div style={{}}>
+      <h2 style={{textAlign:"center", height:"3vh"}}>Hollywood News</h2>
+      <div className='sportStyle'>
+     
+     {catchData.data[1].map((artVal, ind)=>{
+       return(
+         <>
+         <div>
+         <h4>{artVal.title}</h4>
+         <img src={artVal.image} alt="some error"/> <br></br>
+         <Link to={`/hollywood/${ind+1}`}>
+         full article</Link>
+         {/* <p>{artVal.description}</p> */}
+        </div>
+         
+         </>
+       )
+     })}
+   </div>
+      </div>
+
+      <div style={{}}>
+      <h2 style={{textAlign:"center", height:"3vh"}}>Technology News</h2>
+      <div className='sportStyle'>
+     
+     {catchData.data[0].map((artVal, ind)=>{
+       return(
+         <>
+         <div>
+         <h4>{artVal.title}</h4>
+         <img src={artVal.image} alt="some error"/> <br></br>
+         <Link to={`/technology/${ind+1}`}>
+         full article</Link>
+         {/* <p>{artVal.description}</p> */}
+        </div>
+         
+         </>
+       )
+     })}
+   </div>
+      </div>
+
+      <div style={{}}>
+      <h2 style={{textAlign:"center", height:"3vh"}}>Sports News</h2>
+      <div className='sportStyle'>
+     
+     {catchData.data[2].map((artVal, ind)=>{
+       return(
+         <>
+         <div>
+         <h4>{artVal.title}</h4>
+         <img src={artVal.image} alt="some error"/><br></br>
+         <Link to={`/hollywood/${ind+1}`}>
+         full article</Link>
+         {/* <p>{artVal.description}</p> */}
+        </div>
+         
+         </>
+       )
+     })}
+   </div>
+      </div>
     <Outlet />
     </>
   )

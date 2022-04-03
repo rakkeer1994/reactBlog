@@ -1,38 +1,38 @@
 export const PicData = [
     {
         id:1,
-        name: "the react blog",
-        imgSrc: "https://cdn.pixabay.com/photo/2016/08/12/14/25/abstract-1588720__340.jpg",
+        name: "Alexa can now notify you about deals up to a day in advance",
+        imgSrc: "https://cdn.vox-cdn.com/thumbor/BDwhD7ZZap8LncgLXS_ipxU9ILU=/0x106:2040x1254/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70695211/dseifert_191123_3810_0012.0.jpg",
         webLink: "https://youtu.be/T3IqVaB65TU",
-        topic: "Food Stall",
-        Desc: "Sources said raids were conducted today at the home of Shiv Sena office-bearer and Shirdi Trust member Rahul Kanal, who is considered close to Maharashtra Minister Aaditya Thackeray. Locations liked to cable operator Sadanand Kadam and Bajrang Kharmate were also subjected to search and seizure operation, sources said."
+        topic: "Tech Corner",
+        Desc: "Amazon’s Alexa has launched a new feature that will notify Prime customers up to 24 hours in advance about specific discounts, the company announced today. Amazon says the new feature is designed to help customers save money while saving time.."
 
     },
    
     {
         id:2,
-        name: "the react blog",
-        imgSrc: "https://media.istockphoto.com/photos/bandra-worli-sea-link-mumbai-picture-id915681526?b=1&k=20&m=915681526&s=170667a&w=0&h=JiPLQYQ3jgaQm2aAYY1hQifLhOsB9PIeKc3MZ5v1Iwc=",
+        name: "NASA says Russia is still ‘moving toward’ extending the space station through 2030",
+        imgSrc: "https://cdn.vox-cdn.com/thumbor/20Jthlhy3nDerotx3W4k7Epkl8o=/0x126:5150x3023/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70694711/51750549427_63b21c49b5_o__1_.0.jpg",
         webLink: "https://youtu.be/T3IqVaB65TU",
-        topic: "Coffee corner",
-        Desc: "Sources said raids were conducted today at the home of Shiv Sena office-bearer and Shirdi Trust member Rahul Kanal, who is considered close to Maharashtra Minister Aaditya Thackeray. Locations liked to cable operator Sadanand Kadam and Bajrang Kharmate were also subjected to search and seizure operation, sources said."
+        topic: "Science corner",
+        Desc: "Despite the United States and Russia’s deteriorating relationship here on Earth, Russia is still considering extending its participation on the International Space Station through 2030, according to NASA. However, it could be a few months before there is a solid update on Russia’s official stance."
 
     },
     {
         id:3,
-        name: "the react blog",
-        imgSrc: "https://cdn.pixabay.com/photo/2016/02/28/12/55/boy-1226964__340.jpg",
+        name: "Facebook moderators ‘err on the side of an adult’ when uncertain of age in possible abuse photos",
+        imgSrc: "https://cdn.vox-cdn.com/thumbor/vfUB9aEgkHWr9vlh3NStO6bDLIs=/0x156:3000x1844/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70696459/acastro_180928_1777_facebook_hack_0001.0.jpg",
         webLink: "https://youtu.be/T3IqVaB65TU",
-        topic: "Weather news",
-        Desc: "Sources said raids were conducted today at the home of Shiv Sena office-bearer and Shirdi Trust member Rahul Kanal, who is considered close to Maharashtra Minister Aaditya Thackeray. Locations liked to cable operator Sadanand Kadam and Bajrang Kharmate were also subjected to search and seizure operation, sources said."
+        topic: "Social Media Corner",
+        Desc: "A major responsibility for tech companies is to monitor content on their platforms for child sexual abuse material (CSAM), and if any is found, they are legally required to report it to the National Center for Missing and Exploited Children (NCMEC). Many companies have content moderators in place that review content flagged for potentially being CSAM, and they determine whether the content should be reported to the NCMEC.."
     },
     {
       id:4,
-      name: "the react blog",
-      imgSrc: "https://cdn.pixabay.com/photo/2016/02/28/12/55/boy-1226964__340.jpg",
+      name: "Hyper Light Breaker is the new 3D co-op successor to the acclaimed Hyper Light Drifter",
+      imgSrc: "https://cdn.vox-cdn.com/thumbor/8A_9U6OzSBcBhlR_2qlPgfQTkFs=/0x0:2560x1440/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70697398/ss_c7fd637170fa8b9049f5a4998c67c859117cc672.0.jpg",
       webLink: "https://youtu.be/T3IqVaB65TU",
-      topic: "hollywood",
-      Desc: "Sources said raids were conducted today at the home of Shiv Sena office-bearer and Shirdi Trust member Rahul Kanal, who is considered close to Maharashtra Minister Aaditya Thackeray. Locations liked to cable operator Sadanand Kadam and Bajrang Kharmate were also subjected to search and seizure operation, sources said."
+      topic: "Technology",
+      Desc: "An announcement trailer only shows a few glimpses of pre-alpha gameplay after an animated fight scene that matches the balletic action style of the original Hyper Light Drifter. Screenshots show a few different biomes, snaps of combat, and the main character tearing around on a hoverboard."
   }
 ]
 
