@@ -1,0 +1,109 @@
+.navbarList{
+    width: 110%;
+    background-color: cadetblue;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: fixed;
+    margin: -11px;
+    z-index: 99;
+    }
+    
+    .heading{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    
+    }
+    .rotate{
+        transform: rotate(-90deg);
+        margin-top: 10px;
+      
+    }
+     .list{
+         color: aliceblue;
+     }
+    .list ul{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    
+    .list ul li{
+        list-style: none;
+        font-size: 1.9rem;
+    }
+    
+    .animatLine{
+        position: relative;
+        color: black;
+        text-decoration: none;
+    }
+    .animatLine::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        bottom: -3px;
+        left: 0;
+        visibility: hidden;
+        background-color: black;
+        transform: scale(0);
+        transition:all .1s linear .5s;
+    }
+    .animatLine:hover:before{
+        visibility: visible;
+        transform: scale(1);
+    }
+    
+    .bimenu{
+        display: none;
+    }
+    @media (max-width: 600px){
+        .bimenu{
+            display: block;
+        }
+     
+            .navbarList{
+                width: 100%;
+                background-color: blue;
+                color: white;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                }
+        
+                .heading{
+                    font-size: 1.1rem;
+                    text-align: left;
+                    margin-top: 1%;
+                    }
+    
+                    .rotate{
+                        margin-left: 3%;
+                        margin-top: .5%;
+                        position: absolute;
+                    }
+    
+                    .rotateNot{
+                        margin-left: 7%;
+                        position: absolute;
+                    }
+                    .bimenu{
+                        position: absolute;
+                        right: 0;
+                    }
+            .list ul li{
+                display: none;
+                text-align: center;
+                list-style: none;
+    
+            }
+            .listshowBimenuList ul li{
+                display: block;
+                text-align: center;
+                
+            }
+            
+        }
