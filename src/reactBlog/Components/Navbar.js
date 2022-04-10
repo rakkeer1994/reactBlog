@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div>
+    <div style={{backgroundColor:"cadetblue"}}>
       <div className='Title'>
         <div className='sub-title1'>The</div>
         <div  className='sub-title2'>Times Of India</div>

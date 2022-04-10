@@ -16,7 +16,7 @@ const Fitness = () =>{
            </div>
             {
             Fitness.map( (Fitnessdetails,index) =>
-              <div className='design'>
+              <div className='design' key={Fitnessdetails.id}>
                 <div >
                <Link to={`/Fitness/${Fitnessdetails.id}`}><img className="images" src={Fitnessdetails.image} alt="" /></Link>
                 </div>

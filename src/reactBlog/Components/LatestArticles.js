@@ -150,7 +150,7 @@ const LatestArticles = () => {
               Tourist.map( (tourisms,index) =>{
                 if(index >= Tourist.length-1){
                   return(
-           <div className='design1'>
+           <div className='design1' key={tourisms.id}>
                 <div >
                 <Link to={`/Tourism/${tourisms.id}`}><img className="images1" src={tourisms.image} alt="" /></Link>
                 </div>
@@ -176,7 +176,7 @@ const LatestArticles = () => {
               Food.map( (fooddetails,index) =>{
                 if(index >= Tourist.length-1){
                   return(
-           <div className='design1'>
+           <div className='design1' key={fooddetails.id}>
                 <div >
                 <Link to={`/Food/${fooddetails.id}`}><img className="images1" src={fooddetails.image} alt="" /></Link>
                 </div>
@@ -202,7 +202,7 @@ const LatestArticles = () => {
               Bollywood.map( (mvedetails,index) =>{
                 if(index >= Tourist.length-1){
                   return(
-           <div className='design1'>
+           <div className='design1' key={mvedetails.id}>
                 <div >
                <Link to={`/Bollywood/${mvedetails.id}`}><img className="images1" src={mvedetails.image} alt="" /></Link>
                 </div>
@@ -228,7 +228,7 @@ const LatestArticles = () => {
              Fitness.map( (Fittdetails,index) =>{
                 if(index >= Fitness.length-1){
                   return(
-           <div className='design1'>
+           <div className='design1' key={Fittdetails.id}>
                 <div >
                 <Link to={`/Fitness/${Fittdetails.id}`}><img className="images1" src={Fittdetails.image} alt="" /></Link>
                 </div>
@@ -254,7 +254,7 @@ const LatestArticles = () => {
              Technology.map( (techdetails,index) =>{
                 if(index >= Technology.length-1){
                   return(
-           <div className='design1'>
+           <div className='design1' key={techdetails.id}>
                 <div >
                 <Link to={`/Technology/${techdetails.id}`}><img className="images1" src={techdetails.image} alt="" /></Link>
                 </div>
